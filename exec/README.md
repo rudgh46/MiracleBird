@@ -31,6 +31,7 @@
 ### Backend 및 Frontend 빌드 및 배포
 
 - 설치
+
   ```
   #ngninx 설치
   sudo apt-get install nginx -y
@@ -40,6 +41,7 @@
   sudo systemctl stop nginx
   sudo letsencrypt certonly --standalone -d 도메인이름
   ```
+
 - backend/Dockerfile
   ```
   FROM openjdk:11-jdk
@@ -71,6 +73,7 @@
   ...
   ```
 - etc/nginx/sites-enabled/miraclebird.conf
+
   ```
   server {
     listen 80;
@@ -136,10 +139,12 @@
         return 404; # managed by Certbot
   }
   ```
+
   - nginx 설치 후 심볼릭 링크 생성
     - `sudo ln -s /etc/nginx/sites-available/test.conf /etc/nginx/sites-enabled`
   - nginx재실행
     - `sudo service nginx restart`
+
 - 젠킨스 Build시 bash 실행
   ```
   cd ./Backend/miraclebird

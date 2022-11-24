@@ -31,7 +31,6 @@
 ### Backend 및 Frontend 빌드 및 배포
 
 - 설치
-
   ```
   #ngninx 설치
   sudo apt-get install nginx -y
@@ -41,7 +40,6 @@
   sudo systemctl stop nginx
   sudo letsencrypt certonly --standalone -d 도메인이름
   ```
-
 - backend/Dockerfile
   ```
   FROM openjdk:11-jdk
@@ -73,7 +71,6 @@
   ...
   ```
 - etc/nginx/sites-enabled/miraclebird.conf
-
   ```
   server {
     listen 80;
@@ -139,12 +136,10 @@
         return 404; # managed by Certbot
   }
   ```
-
   - nginx 설치 후 심볼릭 링크 생성
     - `sudo ln -s /etc/nginx/sites-available/test.conf /etc/nginx/sites-enabled`
   - nginx재실행
     - `sudo service nginx restart`
-
 - 젠킨스 Build시 bash 실행
   ```
   cd ./Backend/miraclebird
@@ -325,4 +320,4 @@ Redirect URI는 다음 규칙에 맞게 등록해야 합니다.
 
 # 시연 시나리오
 
-[🎬시연 시나리오](https://lab.ssafy.com/s07-blockchain-nft-sub2/S07P22C107/-/blob/develop/exec/miracle_bird_%EC%8B%9C%EC%97%B0%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4.pdf)
+[🎬시연 시나리오](/exec/miracle_bird_%EC%8B%9C%EC%97%B0%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4.pdf)

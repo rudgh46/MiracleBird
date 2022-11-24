@@ -5,7 +5,7 @@
 </div>
 
 - 👉 [서비스 페이지](https://j7c107.p.ssafy.io)
-- 👉 [노션](https://few-mat-bba.notion.site/6ed917c7a7214d1c911bd2936e75c431)
+- 👉 [노션](https://marmalade-grin-120.notion.site/PJT2-Miracle-Bird-151e32e5482b422d9d142dca7ab41b06)
 <!-- - 👉 [시연영상]() -->
 
 <br />

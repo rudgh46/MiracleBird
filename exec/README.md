@@ -1,5 +1,7 @@
 # 포팅매뉴얼
+
 # 색인
+
 [🔨빌드 및 배포](#빌드-및-배포)<br>
 [👨‍💻외부 서비스 정보](#외부-서비스-정보)<br>
 [📋DB 정보](#데이터베이스-정보)<br>
@@ -29,141 +31,129 @@
 ### Backend 및 Frontend 빌드 및 배포
 
 - 설치
-    
-    ```
-    #ngninx 설치
-    sudo apt-get install nginx -y
-    
-    #letsencrypst 설치
-    sudo apt-get install letsencrypt
-    sudo systemctl stop nginx
-    sudo letsencrypt certonly --standalone -d 도메인이름
-    ```
-    
+  ```
+  #ngninx 설치
+  sudo apt-get install nginx -y
+
+  #letsencrypst 설치
+  sudo apt-get install letsencrypt
+  sudo systemctl stop nginx
+  sudo letsencrypt certonly --standalone -d 도메인이름
+  ```
 - backend/Dockerfile
-    
-    ```
-    FROM openjdk:11-jdk
-    VOLUME /tmp
-    ADD target/miraclebird-0.0.1-SNAPSHOT.jar app.jar
-    ENV TZ=Asia/Seoul
-    EXPOSE 8080
-    ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
-    ```
-    
+  ```
+  FROM openjdk:11-jdk
+  VOLUME /tmp
+  ADD target/miraclebird-0.0.1-SNAPSHOT.jar app.jar
+  ENV TZ=Asia/Seoul
+  EXPOSE 8080
+  ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+  ```
 - frontend/Dockerfile
-    
-    ```
-    FROM node:16.16.0
-    WORKDIR /usr/src/app
-    COPY package.json ./
-    ENV TZ=Asia/Seoul
-    RUN npm install -y tzdata
-    COPY ./ ./
-    EXPOSE 3000
-    CMD ["npm","run","dev"]
-    ```
-    
+  ```
+  FROM node:16.16.0
+  WORKDIR /usr/src/app
+  COPY package.json ./
+  ENV TZ=Asia/Seoul
+  RUN npm install -y tzdata
+  COPY ./ ./
+  EXPOSE 3000
+  CMD ["npm","run","dev"]
+  ```
 - etc/nginx/nginx.conf
-    
-    ```
-    ...
-    http {
-    				...
-    				client_max_body_size 100M;
-    				...
-    			}
-    ...
-    ```
-    
+  ```
+  ...
+  http {
+  				...
+  				client_max_body_size 100M;
+  				...
+  			}
+  ...
+  ```
 - etc/nginx/sites-enabled/miraclebird.conf
-    
-    ```
-    server {
+  ```
+  server {
+    listen 80;
+
+    server_name j7c107.p.ssafy.io;
+    return 301 https://j7c107.p.ssafy.io$request_uri;
+  }
+  server {
+    listen 443 ssl http2;
+    server_name j7c107.p.ssafy.io;
+
+    # ssl 인증서 적용하기
+    ssl_certificate /etc/letsencrypt/live/j7c107.p.ssafy.io/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/j7c107.p.ssafy.io/privkey.pem;
+
+    location / {
+      proxy_pass http://j7c107.p.ssafy.io:3000/;
+      proxy_set_header Host $http_host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+  #백엔드 API
+    location /api/ {
+      proxy_pass http://j7c107.p.ssafy.io:8080/;
+    }
+
+          #Express.js 이미지 서버
+    location /image/ {
+      proxy_pass http://j7c107.p.ssafy.io:3003/;
+    }
+
+          #업로드된 이미지 접근
+    location /images/ {
+      alias /home/ubuntu/image-server/uploads/;
+    }
+
+          #jenkins test
+    location /jenkins/ {
+      proxy_pass http://j7c107.p.ssafy.io:9000/;
+    }
+          #blockchain
+    location /blockchain/ {
+      proxy_pass http://20.196.209.2:8545/;
+    }
+    location /blockchain2/ {
+      proxy_pass http://52.141.42.92:8545/;
+    }
+    location /blockchain3/ {
+      proxy_pass http://20.41.85.203:8545/;
+    }
+
+  }
+
+  server {
+      if ($host = j7c107.p.ssafy.io) {
+          return 301 https://$host$request_uri;
+      }
+
       listen 80;
-    
       server_name j7c107.p.ssafy.io;
-      return 301 https://j7c107.p.ssafy.io$request_uri;
-    }
-    server {
-      listen 443 ssl http2;
-      server_name j7c107.p.ssafy.io;
-    
-      # ssl 인증서 적용하기
-      ssl_certificate /etc/letsencrypt/live/j7c107.p.ssafy.io/fullchain.pem;
-      ssl_certificate_key /etc/letsencrypt/live/j7c107.p.ssafy.io/privkey.pem;
-    
-      location / {
-        proxy_pass http://j7c107.p.ssafy.io:3000/;
-        proxy_set_header Host $http_host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-      }
-    
-    #백엔드 API
-      location /api/ {
-        proxy_pass http://j7c107.p.ssafy.io:8080/;
-      }
-    
-            #Express.js 이미지 서버
-      location /image/ {
-        proxy_pass http://j7c107.p.ssafy.io:3003/;
-      }
-    
-            #업로드된 이미지 접근
-      location /images/ {
-        alias /home/ubuntu/image-server/uploads/;
-      }
-    
-            #jenkins test
-      location /jenkins/ {
-        proxy_pass http://j7c107.p.ssafy.io:9000/;
-      }
-            #blockchain
-      location /blockchain/ {
-        proxy_pass http://20.196.209.2:8545/;
-      }
-      location /blockchain2/ {
-        proxy_pass http://52.141.42.92:8545/;
-      }
-      location /blockchain3/ {
-        proxy_pass http://20.41.85.203:8545/;
-      }
-    
-    }
-    
-    server {
-        if ($host = j7c107.p.ssafy.io) {
-            return 301 https://$host$request_uri;
-        }
-    
-        listen 80;
-        server_name j7c107.p.ssafy.io;
-          return 404; # managed by Certbot
-    }
-    ```
-    
-    - nginx 설치 후 심볼릭 링크 생성
-        - `sudo ln -s /etc/nginx/sites-available/test.conf /etc/nginx/sites-enabled`
-    - nginx재실행
-        - `sudo service nginx restart`
+        return 404; # managed by Certbot
+  }
+  ```
+  - nginx 설치 후 심볼릭 링크 생성
+    - `sudo ln -s /etc/nginx/sites-available/test.conf /etc/nginx/sites-enabled`
+  - nginx재실행
+    - `sudo service nginx restart`
 - 젠킨스 Build시 bash 실행
-    
-    ```
-    cd ./Backend/miraclebird
-    mvn clean package
-    docker build -t rest-api-test .
-    cd ../../Frontend
-    docker build -t mb_fe:0.0.1 ./
-    cd ..
-    docker kill mb_fe_container
-    docker kill mb_be_container
-    docker system prune -f
-    docker run -d -p 8080:8080 --restart="always" --name mb_be_container rest-api-test
-    docker run -d -p 3000:3000 --restart="always" --name mb_fe_container mb_fe:0.0.1
-    ```
-    
+  ```
+  cd ./Backend/miraclebird
+  mvn clean package
+  docker build -t rest-api-test .
+  cd ../../Frontend
+  docker build -t mb_fe:0.0.1 ./
+  cd ..
+  docker kill mb_fe_container
+  docker kill mb_be_container
+  docker system prune -f
+  docker run -d -p 8080:8080 --restart="always" --name mb_be_container rest-api-test
+  docker run -d -p 3000:3000 --restart="always" --name mb_fe_container mb_fe:0.0.1
+  ```
 
 ### 이미지서버 빌드 및 배포
 
@@ -252,7 +242,8 @@ Redirect URI는 다음 규칙에 맞게 등록해야 합니다.
 - 10개를 초과하는 Redirect URI 등록이 필요한 경우, [데브톡](https://devtalk.kakao.com/t/topic/82307)으로 문의합니다.
 
 ## OpenZepplin
- - OpenZepplin이 제공하는 ERC-721 인터페이스들을 참고하여 개발에 적용
+
+- OpenZepplin이 제공하는 ERC-721 인터페이스들을 참고하여 개발에 적용
 
 # 데이터베이스 정보
 

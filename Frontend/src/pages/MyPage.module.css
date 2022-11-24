@@ -1,0 +1,703 @@
+.btns {
+    text-align: right;
+    margin-right:5%;
+}
+
+.logout {
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 20px;
+    font-family: 'neodgm';
+    height: 30px;
+    margin-right: 10px;
+    color: black;
+}
+
+.connect {
+    background-color: #0930a5 ;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-family: 'neodgm';
+    /* width:80px; */
+    height:30px;
+    /* font-size: 18px; */
+    text-align: center;
+}
+
+.userDelete {
+    margin: 20px 50px 60px 50px;
+    background-color: #0930a5;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-family: 'neodgm';
+    /* width:80px; */
+    height: 30px;
+    /* font-size: 18px; */
+    text-align: center;
+    float: right;
+}
+
+
+.modalcontent {
+    font-family: 'neodgm';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.wallet {
+    width:120px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.walletbtn {
+    border: none;
+    border-radius: 20px;
+    background-color: #ffe969 ;
+    font-family: 'neodgm';
+    color:black;
+}
+
+.walletAddress {
+}
+
+.walletAddressText {
+    font-size: 20px;
+    background-color: #ffe969;
+    width:120px;
+}
+
+.walletText {
+    font-size: 20px;
+    word-wrap: break-word;
+}
+.keyText{
+    font-size: 10px;
+
+}
+
+.profileupload {
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+}
+
+.profile {
+    width:90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top:20px
+}
+
+.nickname {
+    margin: auto;
+    font-size:15px;
+}
+
+.profileimg {
+    text-align: center;
+}
+
+.profiledetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nftnumber {
+    font-size: 25px;
+    margin: auto;
+}
+
+.mira {
+    font-size: 25px;
+    margin: auto;
+}
+
+.rank {
+    font-size: 25px;
+    margin: auto;
+}
+
+.detail1 {
+    text-align: center;
+    margin: auto;
+}
+
+.detail2 {
+    text-align: center;
+    margin: auto;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.detail3 {
+    text-align: center;
+    margin: auto;
+}
+
+.nfttext{
+    font-size:15px;
+}
+.miratext{
+    font-size:15px;
+    /* margin:auto; */
+}
+
+.ranktext{
+    font-size:15px;
+}
+
+.pencil {
+    width:15px;
+    height:15px;
+    margin-left:3px;
+}
+
+.nicknamebox {
+    display: flex;
+    flex-direction: row;
+}
+
+.pencilbtn {
+    background-color: white;
+    border:none;
+}
+
+
+.modalcontent2 {
+    font-family: 'neodgm';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0 !important;
+}
+
+
+.nicknameinput {
+    font-family: 'neodgm';
+    width:50%;
+    height:30px;
+}
+
+.nicknamebtn {
+    font-family: 'neodgm';
+    background-color: #ffe969;
+    border: none;
+    border-radius: 20px;
+    width:40%;
+    height:30px;
+    margin: auto;
+    color:black;
+}
+
+.nicknamecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.nicknamechange {
+    margin-bottom: 8px;
+}
+
+.heatmapcontainer {
+    margin:auto;
+    width:80%;
+    border: 1px solid lightgray;
+    margin-top:10px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.234);
+    text-align: center;
+}
+
+/* .tooltip{
+    transform: rotate(-90deg);
+} */
+
+.selectBox {
+    margin-left: 10%;
+    margin-top:10px;
+    font-family: 'neodgm';
+    width: 25%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    color:black;
+    background-color: white;
+}
+
+
+.nftContainer {
+    width:80%;
+    margin: auto;
+    text-align: center;
+}
+
+.text1 {
+    margin-top:20px;
+    border: 1px solid lightgray;
+    width:25%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding:3px;
+    text-align: center;
+}
+
+.nftImg {
+    border: 1px solid lightgray;
+    align-items: center;
+    margin-top:10px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.234);
+
+}
+
+.nftslide {
+    margin:auto;
+    margin-top:10%;
+    margin-bottom: 10%;
+}
+
+.nfturl {
+    width:90%;
+    height:90%;
+}
+
+.nfturl2 {
+    width:90%;
+    /* height:90%; */
+}
+
+
+.nftcard {
+    width:75%;
+    margin: auto;
+}
+
+.nftcard2 {
+    margin-top:10px;
+}
+
+.nftname {
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.nftdetail {
+    text-align:left;
+    margin-top:10px;
+    font-family: 'neodgm';
+    font-size: 22px;
+}
+
+.nftdetail1 {
+    text-align:left;
+    margin-top:10px;
+    font-family: 'neodgm';
+    font-size: 12px;
+}
+
+.miraprice {
+    margin-top:10px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.miraprice1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.miraprice2 {
+    margin-top:5px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.miraicon {
+    margin-right: 10px;
+    width:30px;
+    height:30px;
+}
+.miraicon1 {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.miraicon2 {
+    margin-right: 3px;
+    width:30px;
+    height:30px;
+}
+
+
+.nftprice {
+    margin-top:auto;
+    margin-bottom:auto;
+    color: black ;
+    font-size:20px;
+}
+
+.btnContainer {
+    text-align: right;
+}
+
+.btnReinforce {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffe969;
+    font-family: 'neodgm';
+    font-size:20px;
+    padding:8px;
+    margin-right:5px;
+    color:black;
+}
+
+.btnReinforce2 {
+    border: none;
+    border-radius: 15px;
+    background-color: lightgray;
+    font-family: 'neodgm';
+    font-size:20px;
+    padding:8px;
+    margin-right:5px;
+    color:gray;
+}
+
+.btnSell {
+    border: none;
+    border-radius: 15px;
+    background-color: #0930a5;
+    color: white;
+    font-family: 'neodgm';
+    font-size:20px;
+    padding:8px;
+}
+
+.btnonsale {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffe969  ;
+    font-family: 'neodgm';
+    font-size:20px;
+    padding:8px;
+    color: black;
+}
+
+
+.nftImgContainer {
+    width:80%;
+    height: 80%;
+    margin: auto;
+}
+
+
+.modalcontent3 {
+    font-family: 'neodgm';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0 !important;
+}
+
+.modalcontent4 {
+    font-family: 'neodgm';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0 !important;
+}
+
+.priceinput {
+    font-family: 'neodgm';
+    width:50%;
+    height:30px;
+    margin-right: 5px;
+}
+
+.sellbtn {
+    font-family: 'neodgm';
+    background-color: #ffe969;
+    border: none;
+    border-radius: 20px;
+    width:40%;
+    height:30px;
+    margin: auto;
+    font-size:15px;
+    color:black;
+}
+
+.pricecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.sellprice {
+    margin-bottom: 8px;
+}
+
+.swiper {
+    z-index: index 0;;
+}
+
+.challengeCt {
+    width:80%;
+    margin: auto;
+    margin-top:20px;
+}
+
+.modalcontent5 {
+    font-family: 'neodgm';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0 !important;
+}
+
+.logoutbtn {
+    border: none;
+    border-radius: 20px;
+    background-color: #ffe969 ;
+    font-family: 'neodgm';
+    height: 30px;
+    font-size: 15px;
+    margin: auto;
+    color:black;
+}
+
+.backbtn {
+    border: none;
+    border-radius: 20px;
+    background-color: #D9D9D9 ;
+    font-family: 'neodgm';
+    height: 30px;
+    font-size: 15px;
+    margin: auto;
+    margin-right:10px;
+    color:black;
+}
+
+.btnCt {
+    margin-top:10px;
+}
+
+.modalheader {
+    border: none !important;
+    font-family: 'neodgm';
+    padding-bottom:0 !important;
+}
+.modalHeader1 {
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.walletCheckbtn{
+    font-family: 'neodgm';
+    background-color: #ffe969;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    float: right;
+    font-size: 15px;
+    color:black;
+}
+.copybtn{
+        font-family: 'neodgm';
+            background-color: #0930a5;
+    border: none;
+        border-radius: 20px;
+        width: 80px;
+        height: 30px;
+        margin: auto;
+        float: right;
+        font-size: 15px;
+            color: white;
+            margin-left: 20px;
+            margin-right: 20px;
+}
+.btnDiv{
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonCt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.closebtn {
+    background-color: #D9D9D9;
+    color:black;
+    border:none;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.btnCt {
+    margin: auto;
+    margin-top: 20px;
+}
+.textarea{
+    width: 80%;
+        height: 100px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: none;
+        font-size: 16px;
+        resize: none;
+}
+
+.adminpage {
+    border: none;
+    background-color: #ffe969 ;
+    border-radius: 20px;
+    font-family: 'neodgm';
+    height: 30px;
+    margin-right: 10px;
+    color: black;
+}
+
+.nonenft {
+    width:100%;
+    height:150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gostoreText {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.gostore {
+    border:none;
+    background-color: #ffe969;
+    border-radius: 20px;
+    color: black;
+}
+
+.modalcontent7 {
+    font-family: 'neodgm';
+    text-align: center;
+}
+
+.adminpage {
+    border: none;
+    background-color: #ffe969 ;
+    border-radius: 20px;
+    font-family: 'neodgm';
+    height: 30px;
+    margin-right: 10px;
+    color: black;
+}
+
+.selltext {
+    color:lightgray;
+}
+.listbtn {
+    top:15px;
+    left: 40%;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 3;
+}
+  .listicon {
+      width: 20px;
+      height: 20px;
+      text-align: right;
+  }
+
+.modalcontent8 {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
+    font-family: 'neodgm';
+    height:350px;
+    overflow-y: auto !important;
+    text-align: center;
+}
+.btnonsale3 {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffe969;
+    font-family: 'neodgm';
+    font-size: 12px;
+    padding: 4px;
+    color: black;
+}
+.btnReinforce4 {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffe969;
+    font-family: 'neodgm';
+    font-size: 12px;
+    padding: 4px;
+    margin-right: 5px;
+    color: black;
+}
+.btnSell2 {
+    border: none;
+    border-radius: 15px;
+    background-color: #0930a5;
+    color: white;
+    font-family: 'neodgm';
+    font-size: 12px;
+    padding: 4px;
+}
+.btnReinforce3 {
+    border: none;
+    border-radius: 15px;
+    background-color: lightgray;
+    font-family: 'neodgm';
+    font-size: 12px;
+    padding: 4px;
+    margin-right: 5px;
+    color: gray;
+}
+  .nftImgContainer1 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  .nfturl2 {
+      width: 90%;
+      height: 90%;
+  }
+  .nftprice2 {
+      margin-top: auto;
+      margin-bottom: auto;
+      color: black;
+      font-size: 12px;
+      font-family: 'neodgm';
+  }

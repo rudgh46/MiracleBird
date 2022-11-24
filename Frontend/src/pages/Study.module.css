@@ -1,0 +1,100 @@
+.backbtn {
+    background-color: white;
+    border:none;
+    margin-top:10px;
+    color:black;
+}
+
+.backicon {
+    width:25px;
+    height:25px;
+}
+
+.mainContainer {
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.morningimg {
+    width:60px;
+    height:60px;
+    margin:auto;
+    margin-top:70px;
+    margin-bottom: 70px;
+}
+
+.reward {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.subtext {
+    margin-bottom:2px;
+    margin-top:0;
+    font-size: 15px;
+    word-break:keep-all;
+}
+
+.titletext {
+    margin-top:10px;
+    font-size: 20px;
+    margin-bottom:2px;
+    padding:2px;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+}
+
+.coin {
+    width:20px !important;
+    height:20px;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left:3px;
+    margin-right:3px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feedbtn {
+    background-color: white;
+    border:none;
+    margin-top:10px;
+    color:black;
+    margin-right:10px;
+}
+
+.detailCt {
+    width:300px;
+    height: 300px;
+    background: linear-gradient(#d0fff7ac , #f8fffeac);
+    border-radius: 50px;
+    text-align: center;
+    margin: auto;
+    display: table;
+}
+
+.maintext {
+    width:80%;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.subtext2 {
+    margin-bottom:2px;
+    margin-top:20px;
+    font-size: 15px;
+    word-break:keep-all;
+    color:lightgray;
+    text-align: center;
+    
+}

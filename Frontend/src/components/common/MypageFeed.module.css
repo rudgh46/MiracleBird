@@ -1,0 +1,116 @@
+
+.listbtn {
+    background: none;
+    border: none;
+    padding: 5px;
+    text-align: right;
+  }
+
+  .listicon {
+    width: 20px;
+    height:20px;
+    text-align: right;
+  }
+  
+  .selectBox {
+    font-family: 'neodgm';
+    width: 31%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size:15px;
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:black;
+    background-color: white;
+}
+
+.feeds {
+    margin-top:10px;
+    border: 1px solid lightgray;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.234);
+    
+}
+
+.feedImg {
+    width:80%;
+    margin:auto;
+    margin-bottom:20px;
+    border-radius: 5px;
+}
+
+.modalheader {
+    border: none !important;
+    font-family: 'neodgm';
+}
+
+.modalcontent {
+    font-family: 'neodgm';
+    text-align: center;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+.feedsImg {
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.list {
+    text-align: right;
+    margin-right: 10%;
+    margin-top:10px;
+}
+
+.dialog{
+    overflow-y: auto !important
+  }
+
+.body {
+    overflow-y: auto !important;
+    height:400px;
+}
+
+.challengeNow {
+    width:100%;
+    height:150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gochallengeText {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.gochallenge {
+    border:none;
+    background-color: #ffe969;
+    border-radius: 20px;
+    color: black;
+}
+
+.table{
+    box-shadow: 0px 0px 10px rgbA(0, 0, 0, 0.234);
+    width: 80%;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'neodgm';
+}
+
+.tableHead {
+    border-bottom: 1px solid lightgray;
+    background-color:#058bf0  ;
+}
+
+.tableRight {
+    border-right: 1px solid lightgray;
+}

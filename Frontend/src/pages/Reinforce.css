@@ -1,0 +1,9 @@
+.tooltip-inner {
+    opacity:100% !important;
+    background-color: #0930a5    !important;
+}
+
+.tooltip {
+    font-family: 'neodgm';
+    --bs-tooltip-bg: #0930a5  !important;
+}

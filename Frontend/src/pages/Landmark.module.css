@@ -1,0 +1,314 @@
+
+.landmarkImg{
+  width: 80%;
+  margin:auto;
+  margin-top:5px;
+  margin-bottom:15px;
+}
+
+.gridcontainer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  padding: 20px;
+  margin: auto;
+}
+
+.selectbox1 {
+  font-family: 'neodgm';
+  width: 25%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  font-size:15px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+  color:black;
+  background-color: white;
+  margin-right:20px;
+}
+.selectbox2 {
+  font-family: 'neodgm';
+  width: 25%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  font-size:15px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+  color:black;
+  background-color: white;
+}
+
+.selectCt {
+  width:100%;
+  margin-top:20px;
+  float: left;
+}
+
+.nftCt {
+  border: 1px solid lightgray;
+}
+
+.card {
+  width:100%;
+  border:1px solid lightgray;
+  border-radius: 20px;
+  padding:10px;
+
+}
+
+.flip { 
+  width: 100%;
+  height: 300px;
+  perspective: 1100px;
+  margin-bottom:15px;
+}
+
+.card {
+  width: 100%; 
+  height: 100%; 
+  position: relative;
+  transition: .4s;
+  transform-style: preserve-3d;
+}	
+
+.front, .back {
+  width: 100%; 
+  height:100%;
+  background-color: white;
+  backface-visibility: hidden;
+}
+
+.front {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.back {
+  margin-top: -250px;
+}
+
+.back { 
+  transform: rotateY(180deg);
+}
+
+.flip:hover .card {
+  transform: rotateY(180deg);
+}
+
+.nftTitle {
+  width:90%;
+  font-size:18px;
+  display: flex;
+  flex-direction: row;
+  margin:auto;
+  background: white;
+  height: 24px;
+  position: relative;
+}
+
+.nftTitle2 {
+  font-size:18px;
+}
+
+.priceCt {
+  margin-right: 10%;
+  text-align: right;
+}
+
+.nftOwner {
+  margin-left: 10%;
+  display:flex;
+  flex-direction: row;
+}
+
+.dollarIcon {
+  width:18px;
+  height: 18px;
+}
+
+.starIcon {
+  width:20px;
+  height: 20px;
+  margin-top: 0px;
+  margin-left:12px;
+  margin-right:2px;
+  margin-bottom:5px;
+}
+
+.sellnow {
+  color: gray;
+  font-size:12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.buttonCt {
+  margin-bottom:0;
+}
+
+.buyBtn {
+  border: none;
+  color: white;
+  background-color: #0930a5;
+  border-radius: 10px;
+}
+
+.name {
+  /* background-color: #ffe969; */
+  border-style: none none  double none;
+  border-color: #ffe969;
+}
+
+.modalheader {
+  border: none !important;
+}
+
+.modalcontent {
+  font-family: 'neodgm';
+  text-align: center;
+}
+
+.closeBtn {
+  border: none;
+  color: black;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  margin-right:10px;
+}
+
+.modalbtns {
+  text-align: right;
+}
+
+.text1 {
+  font-size: 12px;
+}
+
+.privKeychange {
+  margin-bottom: 5px;
+}
+
+.privKeybtn {
+  margin-left: 10px;
+  border: none;
+  background-color: #ffe969 ;
+  color:black;
+  border-radius: 20px;
+  padding:5px;
+}
+
+.buyBtn2 {
+  border: none;
+  color: gray;
+  background-color: white;
+  border-radius: 10px;
+}
+.buyBtn3 {
+  border: none;
+    color: black;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.modalcontent3 {
+  font-family: 'neodgm';
+}
+
+.modalcontent2 {
+  height:300px;
+}
+
+.nftTitletext {
+  color:black;
+  background-color: white;
+  width:100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.closeButton {
+  color:black;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  border:none;
+  margin-right:10px;
+}
+.modalbtn {
+  text-align: right;
+}
+
+.modalcontent4 {
+  font-family: 'neodgm';
+  display: flex;
+  flex-direction: column;
+}
+
+.marquee {
+  height: 24px;
+  width: 60%;
+  position: absolute;
+  overflow: hidden;
+}
+.marquee div {
+  display: block;
+
+  white-space: nowrap;
+  position: absolute;
+
+  -webkit-animation: marquee 20s linear infinite;
+  -moz-animation: marquee 20s linear infinite;
+  -ms-animation: marquee 20s linear infinite;
+  -o-animation: marquee 20s linear infinite;
+  animation: marquee 20s linear infinite;
+}
+
+@-webkit-keyframes marquee {
+  0% { right: 0; }
+  100% { right: 100%; }
+}
+@-moz-keyframes marquee {
+  0% { right: 0; }
+  100% { right: 100%; }
+}
+@-ms-keyframes marquee {
+  0% { right: 0; }
+  100% { right: 100%; }
+}
+@-o-keyframes marquee {
+  0% { right: 0; }
+  100% { right: 100%; }
+}
+@keyframes marquee {
+  0% { right: 0; }
+  100% { right: 100%; }
+}
+
+.starforceCt {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  right:0;
+}
+
+.nftArea {
+  font-size: 13px;
+}
+
+.backicon {
+  width:25px;
+  height:25px;
+}
+
+.backbtn {
+  background-color: white;
+  border:none;
+  margin-right:10px;
+}

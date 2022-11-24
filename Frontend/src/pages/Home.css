@@ -1,0 +1,14 @@
+.homebtn {
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    width:50%;
+    border-radius: 0;
+    color: gray;
+  }
+
+.homeactive {
+    border:none;
+    border-bottom: 2px solid gray !important;
+    color: black !important;
+}

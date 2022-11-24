@@ -1,0 +1,77 @@
+.backbtn {
+    background-color: white;
+    border:none;
+    margin-top:10px;
+}
+
+.backicon {
+    width:25px;
+    height:25px;
+}
+
+.Form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top:10px;
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    margin:auto;
+    font-family: "neodgm";
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    
+  }
+  
+  .textarea {
+    width: 100%;
+    min-height: 300px;
+    margin:auto;
+    font-family: "neodgm";
+    border-radius: 5px;
+    border: 2px solid lightgray;
+  }
+  
+  .contentForm {
+    margin-top:20px;
+  }
+
+  .submitbtn {
+    width: 200px;
+    height: 50px;
+    font-family: "neodgm";
+    font-size: 20px;
+    color:black;
+    border: none;
+    background: #ffe969;
+    border-radius: 20px;
+    text-align:center;
+  }
+
+  .btnForm {
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+  }
+
+  .selectBox {
+    width:30%;
+    font-family: 'neodgm';
+    padding:3px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+  }
+    .modalheader {
+      border: none !important;
+      font-family: 'neodgm';
+      padding-bottom: 0 !important;
+    }
+  
+    .modalcontent {
+      font-family: 'neodgm';
+      font-size: 18px;
+    }
+

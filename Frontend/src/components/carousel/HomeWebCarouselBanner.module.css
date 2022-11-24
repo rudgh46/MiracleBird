@@ -1,0 +1,51 @@
+.postImg {
+    width:90%;
+    height:90%;
+    margin: auto;
+}
+
+.modalheader {
+    border:none;
+}
+
+.modalcontent {
+    font-family: 'neodgm';
+    text-align: center;
+}
+
+.text {
+    margin:10px;
+}
+
+.accessBtn {
+    border: none;
+    background-color: #0930a5;
+    border-radius: 15px;
+    margin-right:10px;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    color:white;
+}
+
+.deleteBtn {
+    border: none;
+    background-color: #ffe969 ;
+    border-radius: 15px;
+    margin-right:10px;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    color:black;
+}
+
+.post {
+    width:90%;
+    border-bottom: 2px solid lightgray;
+    margin: auto;
+    margin-top:5px;
+}
+
+.postCt {
+    margin-top:15px;
+}

@@ -1,0 +1,38 @@
+.react-calendar-heatmap .color-scale-1 { fill: #0930a5; opacity:0.2;}
+.react-calendar-heatmap .color-scale-2 { fill: #0930a5; opacity:0.5; }
+.react-calendar-heatmap .color-scale-3 { fill: #0930a5; opacity:0.75;}
+.react-calendar-heatmap .color-scale-4 { fill: #0930a5; }
+
+.react-calendar-heatmap {
+    width:60%;
+    margin:auto;
+    height:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.react-calendar-heatmap rect:focus {
+    stroke: none;
+    stroke-width:0;
+}
+
+.react-calendar-heatmap rect:hover{
+    stroke: none;
+    stroke-width:0;
+}
+
+.swiper-button-next {
+    --swiper-navigation-size: 30px;
+    right:5px;
+
+}
+
+.swiper-button-prev {
+    --swiper-navigation-size: 30px;
+    left:5px;
+
+}
+
+.ReactModal__Overlay {
+    z-index:100;
+}

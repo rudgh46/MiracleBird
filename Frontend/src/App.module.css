@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "neodgm";
+  src: url("/neodgm.ttf");
+}
+
+.App{
+  font-family: 'neodgm';
+  margin: 0%;
+}
+
+.route {
+  padding-bottom: 2.5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height: 2.5rem;
+}
+
+.Contents {
+  margin-bottom: 60px;
+  margin-top:50px;
+}
+
+.Contents2 {
+  width: 500px;
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top:50px;
+}

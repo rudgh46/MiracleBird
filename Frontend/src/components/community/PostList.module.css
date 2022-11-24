@@ -1,0 +1,86 @@
+.titletext {
+    text-decoration: none;
+    color: black;
+}
+
+.titletext:hover {
+    color:black !important;
+}
+
+.titletext2 {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.titletext2:hover {
+    color:black !important;
+}
+
+
+.tableContainer {
+    width:90%;
+    margin:auto;
+}
+
+.tableRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tableRow2 {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+.viewicon {
+    width:15px;
+    height:15px;
+    margin: auto;
+    margin-right: 3px;
+}
+
+.readCount {
+    display:flex;
+    flex-direction: row;
+}
+
+.counttext {
+    margin:auto;
+}
+
+.datename {
+    display: flex;
+    flex-direction: row;
+}
+
+.createDate {
+    margin-right:5px;
+}
+
+.nickname img {
+    width:18px;
+    height:18px;
+    border-radius: 50%;
+    border:1px solid gray;
+    margin-right: 3px;
+}
+  .tablerow:hover {
+      background-color: #d0fff7;
+      cursor: pointer;
+  }
+
+  .tablerow {
+      padding: 13px 8px;
+      border-bottom: 1px solid lightgray;
+      display: flex;
+      flex-direction: column;
+  }
+  .commontable {
+      width: 100%;
+      margin: 0 auto;
+      /* text-align: center; */
+      border-spacing: 0;
+  }

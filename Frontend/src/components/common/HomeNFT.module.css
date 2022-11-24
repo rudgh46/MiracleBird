@@ -1,0 +1,62 @@
+.detailText {
+    width:90%;
+    text-align:center;
+    margin: auto;
+    margin-top:15px;
+    margin-bottom: 40px;
+}
+
+.detail1 {
+    font-size: 25px;
+    font-weight: bold;
+    color:gray;
+}
+
+.detail2 {
+    width:50%;
+    margin: auto;
+    word-break:keep-all;
+    font-size:18px;
+}
+
+.detail3 {
+    font-size: 10px;
+    word-break:keep-all;
+}
+
+.detailimg {
+    width:60%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.detailicon {
+    width:30px;
+    height: 30px;
+}
+
+.iconCt {
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom:25px;
+}
+
+.iconCt2 {
+    width:60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom:25px;
+}
+.slidecontainer {
+    text-align: center;
+}
+.mainImg {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 80%;
+}

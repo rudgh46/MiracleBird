@@ -1,0 +1,175 @@
+.backbtn {
+    background-color: white;
+    border:none;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.backicon {
+    width:25px;
+    height:25px;
+}
+
+.Header {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerText {
+    font-size: 20px;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.checkboxs {
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+}
+
+.boxs {
+    margin:auto;
+    margin-right:3px;
+}
+
+.selectCategory {
+    width:90%;
+    margin:auto;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.checkboxCt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom:10px;
+}
+.selectboxCt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:10px;
+    background-color: #d0fff7 ;
+    border-radius: 10px;
+    width: 50%;
+    height:100px;
+}
+
+.selectboxs {
+    display: flex;
+    flex-direction: row;
+}
+
+.closeBtn {
+    background-color: #00000000;
+    border: none;
+    color:black;
+}
+
+.labelname {
+    margin:auto;
+}
+
+.categorytext {
+    word-break: keep-all;
+    color:gray;
+}
+
+.costBox {
+    width:40%;
+    margin: auto;
+    text-align: right;
+}
+.selectboxsCt {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.costBtn {
+    color: black;
+    background-color: #ffe969 ;
+    border:none;
+    border-radius: 15px;
+    margin-top:5px;
+    padding:5px;
+}
+
+.costText {
+    font-size: 25px;
+}
+
+.Content {
+    width:90%;
+    margin: auto;
+}
+
+.contextheader {
+    word-break: keep-all;
+    font-size:20px;
+    width:80%;
+}
+
+.imgCt {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:50px;
+    margin-bottom: 30px;
+}
+
+.morningicon {
+    width:50px;
+    height:50px;
+}
+
+.healthicon {
+    width:50px;
+    height:50px;
+}
+
+.studyicon {
+    width:50px;
+    height:50px;
+}
+
+.detailCt {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom:40px;
+    width:80%;
+    border: 1px dashed lightgray;
+    padding:10px;
+    border-radius: 20px;
+}
+
+.detailline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detail1 {
+    font-size: 12px;
+}
+
+.detail2 {
+    color: gray;
+    font-size: 12px;
+}
+
+.contextdetail {
+    font-size: 15px;
+    word-break: keep-all;
+    color: #0930a5 ;
+    opacity: 80%;
+}
+
+.modalheader {
+    border:none !important;
+}
+
+.modalcontent {
+    font-family: 'neodgm';
+    text-align: center;
+}

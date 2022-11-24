@@ -1,0 +1,14 @@
+[
+  {
+    "title": "시즌 1",
+    "season": 1,
+    "startDate": "2022-10-03",
+    "endDate": "2022-10-10"
+  },
+  {
+    "title": "시즌 2",
+    "season": 2,
+    "startDate": "2022-10-10",
+    "endDate": "2022-10-17"
+  }
+]

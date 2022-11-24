@@ -1,0 +1,157 @@
+.mainImg {
+    width:200px;
+    height:200px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.title {
+    height:30px;
+    width:180px;
+}
+
+.text1 {
+    font-size: 25px;
+}
+
+.test1Ct {
+    /* background: linear-gradient(#058af056, #f3faff00); */
+    /* border-radius: 20px; */
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top:20px;
+    margin-bottom:50px;
+    padding:20px;
+}
+
+.first {
+    width:90%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.logoimg {
+    margin: auto;
+    margin-top:20px;
+}
+
+.Main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.text2_1 {
+    font-size: 30px;
+    color:gray
+}
+
+.text2_2 {
+    font-size: 20px;
+    word-break: keep-all;
+    margin-bottom: 50px;
+}
+
+
+.detailCt1, .detailCt2 {
+    margin-bottom: 100px;
+}
+
+.lottie {
+    width:50px;
+    height:50px;
+    transform: rotate(90deg);
+}
+
+.arrowCT {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.startBtn {
+    background-color: #ffffff00 ;
+    border: 3px solid #ffe969 ;
+    border-radius: 40px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+    font-size: 20px;
+    color:black;
+}
+
+.lottie1 {
+    width:300px;
+    height:300px;
+    margin: auto;
+}
+
+.lottie2 {
+    width: 150px;
+    height:150px;
+    margin-top:-80px;
+    margin-left:47%;
+}
+
+.details {
+    margin-bottom: 30px;
+}
+
+.mainImg {
+    width:100%;
+    height:100%;
+}
+
+.slide {
+    margin-bottom: 40px;
+}
+
+.slideCt {
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+.slideCt2 {
+    width:400px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.How {
+    width:60%;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 20px;
+    border-bottom: double #ffe969;
+    word-break: keep-all;
+}
+
+.test1Ct2 {
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top:20px;
+    margin-bottom:50px;
+    padding:20px;
+}
+
+.headers {
+    margin-top: -50px;
+    width:100%;
+}
+
+.headers2 {
+    margin-top:50px;
+    margin-bottom: -60px;
+    width:100%;
+    transform: rotate(180deg);
+}

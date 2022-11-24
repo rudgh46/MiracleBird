@@ -1,0 +1,39 @@
+.mmBtn {
+    background-color: white;
+    color: black;
+    border: 2px solid #FFE969;
+    border-radius: 10px;
+    margin-right:15px;
+  }
+  
+  .healthBtn {
+    background-color: white;
+    color: black;
+    border: 2px solid #38a5f8;
+    border-radius: 10px;
+    margin-right:15px;
+  }
+  
+  .active1 {
+    background-color: #FFE969 !important;
+    color: black !important;
+  }
+  
+  .active2 {
+    background-color: #38a5f8 !important;
+    color: black !important;
+  }
+  
+  .active3 {
+    background-color: #a3f7e9 !important;
+    color: black !important;
+  }
+  
+  
+  .studyBtn {
+    background-color: white;
+    color: black;
+    border: 2px solid #a3f7e9;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,124 @@
+.backbtn {
+    background-color: white;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.backicon {
+    width: 25px;
+    height: 25px;
+}
+
+.feeds {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    grid-gap: 15px;
+    margin: auto;
+}
+
+.feed {
+    width: 100%;
+    text-align: center;
+}
+
+.picture {
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.modalcontent {
+    font-family: 'neodgm';
+    text-align: center;
+}
+
+.picture2 {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.modalheader {
+    border: none !important;
+    padding-bottom: 0 !important;
+}
+
+.sirenicon {
+    width: 15px;
+    height: 15px;
+}
+
+.reportbtn {
+    background-color: white;
+    border: none;
+    font-family: 'neodgm';
+    margin-left: 40%;
+    margin-top: 5px;
+    color: black;
+}
+
+.detail {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.feedHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.heartIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+.heartbtn {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.lottie {
+    width: 250px;
+    margin: auto;
+    margin-top: -250px;
+}
+
+.titleForm {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    font-family: "neodgm";
+}
+
+.textarea {
+    width: 100%;
+    min-height: 300px;
+    margin: auto;
+    font-family: "neodgm";
+    border-radius: 5px;
+    border: 2px solid lightgray;
+}
+
+.submitbtn {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: "neodgm";
+    font-size: 20px;
+    color: black;
+    border: none;
+    background: #ffe969;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.modalcontent2 {
+    text-align: center;
+}
+
+.modalcontent3 {
+    text-align: center;
+    height: 15vh;
+}
